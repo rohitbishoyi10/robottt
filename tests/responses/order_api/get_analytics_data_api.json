@@ -1,0 +1,11 @@
+{
+    "response": {
+        "data": {
+            "pegaProductContainerNames": [],
+            "cartAdditions": []
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

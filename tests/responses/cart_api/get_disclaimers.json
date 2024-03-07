@@ -1,0 +1,17 @@
+{
+    "response": {
+        "data": {
+            "content": {
+                "disclaimerList": [
+                    {
+                        "disclaimerName": "^[a-zA-Z0-9]+$",
+                        "disclaimerTerms": "^[A-Za-z ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$"
+                    }
+                ]
+            }
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

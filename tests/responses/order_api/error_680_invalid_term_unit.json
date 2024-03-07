@@ -1,0 +1,19 @@
+{
+    "response": {
+        "data": {
+            "considerSalesTax": "^(True|False)$",
+            "accountId": "^[0-9]+$",
+            "currencyFootNoteSymbol": "",
+            "failureReason": "General - exception occurred: Term Unit can not be",
+            "currencySymbol": "^[$€£¥₹]+$",
+            "currencyCode": "^[a-zA-Z]{3}$",
+            "considerVat": "^(True|False)$"
+        },
+        "responseInfo": {
+            "errors": [
+                "680 | An error occured while processing CTB For purchase"
+            ],
+            "status": "Failure"
+        }
+    }
+}

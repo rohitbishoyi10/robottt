@@ -1,0 +1,13 @@
+{
+    "response": {
+        "data": {
+            "totalRowsAvailable": "^[0-9]+$",
+            "walletId": "^[0-9]+$",
+            "accountId": "^[0-9]+$",
+            "products": []
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

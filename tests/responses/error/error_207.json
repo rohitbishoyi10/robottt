@@ -1,0 +1,10 @@
+{
+    "response": {
+        "responseInfo": {
+            "errors": [
+                "207 | Invalid domain name or no domain name specified on the request."
+            ],
+            "status": "Failure"
+        }
+    }
+}

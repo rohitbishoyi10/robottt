@@ -1,0 +1,12 @@
+{
+    "response": {
+        "data": {
+            "cart": {
+                "cartId": "^[a-zA-Z0-9- ]+$"
+            }
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

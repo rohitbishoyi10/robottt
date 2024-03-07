@@ -1,0 +1,24 @@
+{
+    "response": {
+        "data": {
+            "unitPrice": "^[0-9.]+$",
+            "vat": "^[0-9.]+$",
+            "recurringPrice": "^[0-9.]+$",
+            "currencySymbol": "^[$€£¥₹]+$",
+            "salesTax": "^[0-9.]+$",
+            "productName": "^[a-zA-Z0-9-+.\\/ ]+$",
+            "considerSalesTax": "^(True|False)$",
+            "accountId": "^[0-9]+$",
+            "currencyFootNoteSymbol": "",
+            "price": "^[0-9.]+$",
+            "parentProdInstId": "^[a-zA-Z0-9.]+$",
+            "domainName": "^[a-zA-Z0-9-+. ]+$",
+            "currencyCode": "^[a-zA-Z]{3}$",
+            "isProrated": "^(True|False)$",
+            "considerVat": "^(True|False)$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

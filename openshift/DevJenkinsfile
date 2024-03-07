@@ -1,0 +1,142 @@
+import hudson.tasks.test.AbstractTestResultAction
+def status = ""
+
+@NonCPS
+def testStatuses() {
+    def testStatus = ""
+    AbstractTestResultAction testResultAction = currentBuild.rawBuild.getAction(AbstractTestResultAction.class)
+    if (testResultAction != null) {
+        def total = testResultAction.totalCount
+        def failed = testResultAction.failCount
+        def skipped = testResultAction.skipCount
+        def passed = total - failed - skipped
+        testStatus = "Total: ${total}, Passed: ${passed}, Failed: ${failed}, Skipped: ${skipped}"
+    }
+    return testStatus
+}
+
+@NonCPS
+def overallStatus() {
+    AbstractTestResultAction testResultAction = currentBuild.rawBuild.getAction(AbstractTestResultAction.class)
+    if (testResultAction != null) {
+        def failed = testResultAction.failCount
+        if (failed > 0) {
+            status = "FAILURE"
+        }
+        else {
+            status = "SUCCESS"
+        }
+    }
+    return status
+}
+
+def notifyViaEmail() {
+    def project = env.PROJECT_NAME
+    def awsEnvironment = "stage"
+    withCredentials([string(credentialsId: "${project}-${awsEnvironment}-webpro-iam-access-key", variable: 'AWS_ACCESS_KEY'), string(credentialsId: "${project}-${awsEnvironment}-webpro-iam-secret-key", variable: 'AWS_SECRET_KEY')]) {
+        sh "~/.local/bin/aws configure set aws_access_key_id ${AWS_ACCESS_KEY}"
+        sh "~/.local/bin/aws configure set aws_secret_access_key ${AWS_SECRET_KEY}"
+        sh "~/.local/bin/aws configure set region us-east-1"
+        sh "python3.9 openshift/email_notifier.py ${env.ENVIRONMENT} ${env.BUILD_URL}allure/ ${env.BUILD_URL}artifacts/allure-report.zip ${overallStatus()} '${testStatuses()}'"
+    }
+}
+
+try {
+    timeout(time: 300, unit: 'MINUTES') {
+        def project = env.PROJECT_NAME
+        def application = env.APP_NAME
+        def gitUrl = env.GIT_SOURCE_URL
+        def gitBranch = env.GIT_SOURCE_REF
+        def excludeIncludeOptions, server, api_user, ui_user, environment_exec, browser = 'Chrome', browser_version, os, os_version, geolocation = ''
+        node('xvfb') {
+            parameters {
+                choice(name: 'TEST_TYPE', choices: ['api', 'ui'], description: 'Select Test Type')
+                choice(name: 'TEST_ENV', choices: ['qamain', 'staging', 'prod'], description: 'Select Env')
+                choice(name: 'TEST_EXEC_ENV', choices: ['GRID', 'BROWSERSTACK'], description: 'Select Env For Test Execution')
+            }
+            stage("Environment Setup") {
+                    git url: gitUrl, branch: gitBranch, credentialsId: "bluehost-apac-stashsecret"
+                    sh "python3.9 --version"
+                    sh "curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py"
+                    sh "python3.9 get-pip.py --user"
+                    sh "pip3.9 install --user --upgrade pip"
+                    sh "pip3.9 install --user --trusted-host https://pypi.org/ -r requirements.txt"
+                    sh "pip3.9 install selenium==4.9.1"
+                    sh "cp /home/jenkins/.local/bin/robot /usr/bin/"
+                    sh "cp /home/jenkins/.local/bin/pabot /usr/bin/"
+                    sh "cp /home/jenkins/.local/bin/robotmetrics /usr/bin/"
+                    sh "cp /home/jenkins/.local/bin/robocop /usr/bin/"
+                    sh "export LC_ALL=en_US.UTF-8"
+                    echo "Choice: ${params.TEST_TYPE}"
+                    echo "Choice: ${params.TEST_ENV}"
+                    echo "Choice: ${params.TEST_EXEC_ENV}"
+            }
+            stage("Test Execution") {
+                try{
+                    if (params.TEST_EXEC_ENV == 'BROWSERSTACK') {
+                        withCredentials([usernamePassword(credentialsId: 'browserstack-bluehost', usernameVariable: 'bsUsername', passwordVariable: 'bsPassword')]){
+                            sh "python3.9 -m robot --listener 'allure_robotframework;./allure-results' --xunit mergedxunit.xml -v environmentToRunTest:${environment_exec} -v BROWSER:${browser} -v BS_BROWSER_VERSION:${browser_version} -v BS_OS:'${os}' -v BS_OS_VERSION:${os_version} -v ENV:${server} -v username:$bsUsername -v accessKey:$bsPassword -v API_USER_EMAIL_VARIABLE:${api_user} -v USER_EMAIL_VARIABLE:${ui_user} --name Bluehost-BrowserStack --exclude bhcom tests/testsuite/ui/ || python3.9 -m robot --rerunfailed output.xml --output output1.xml -v environmentToRunTest:${environment_exec} -v BROWSER:${browser} -v BS_BROWSER_VERSION:${browser_version} -v BS_OS:'${os}' -v BS_OS_VERSION:${os_version} -v BS_GEOLOCATION:${geolocation} -v ENV:${server} --name Bluehost-BrowserStack tests/testsuite || python3.9 -m robot --nostatusrc --rerunfailed output1.xml --output output2.xml -v environmentToRunTest:${environment_exec} -v BROWSER:${browser} -v BS_BROWSER_VERSION:${browser_version} -v BS_OS:'${os}' -v BS_OS_VERSION:${os_version} -v BS_GEOLOCATION:${geolocation} -v ENV:${server} --name Bluehost-BrowserStack tests/testsuite"
+                        }
+                    }
+                    else if (params.TEST_EXEC_ENV == 'GRID') {
+                                withCredentials([usernamePassword(credentialsId: 'roaster-ad-creds', usernameVariable: 'Username', passwordVariable: 'Password')]) {
+                                    def testSuitePath
+                                    if (params.TEST_TYPE == 'api') {
+                                        testSuitePath = "tests/testsuite/api"
+                                    }
+                                    else if (params.TEST_TYPE == 'ui') {
+                                        testSuitePath = "tests/testsuite/ui"
+                                    }
+                                    sh """
+                                        python3.9 -m robot --listener 'allure_robotframework;./allure-results' --xunit mergedxunit.xml \
+                                        -v environmentToRunTest:${params.TEST_EXEC_ENV} -v BROWSER:${browser} -v ENV:${params.TEST_ENV} \
+                                        -v BH_AD_USERNAME_VARIABLE:$Username -v BH_AD_PASSWORD_VARIABLE:$Password \
+                                        --name Bluehost-OKD-Grid --exclude bhcom $testSuitePath
+                                    """
+                                }
+                    }
+                }
+                catch (err){
+                    sh "echo ${err}"
+                }
+            }
+            stage("Robot Report") {
+                try{
+                    sh "robotmetrics -skt True -t True -M regression_metrics.html"
+                    sh "python3.9 -m robot.rebot --nostatusrc -R -l finallog.html -r finalreport.html --output finaloutput.xml --merge output*.xml"
+                    robot logFileName: 'finallog.html', outputFileName: 'finaloutput.xml', outputPath: './', reportFileName: 'finalreport.html', otherFiles: 'selenium-screenshot*.png'
+                }
+                catch (err){
+                    sh "echo ${err}"
+                }
+            }
+            stage("Allure Report") {
+                try{
+                    allure([includeProperties: false, jdk: 'Java', properties: [], reportBuildPolicy: 'ALWAYS', results: [[path: '/allure-results']]])
+                }
+                catch (err){
+                    sh "echo ${err}"
+                }
+            }
+            stage("Static Code Analysis"){
+                try{
+                    sh "export LC_ALL=en_US.UTF-8 && robocop --report rules_by_id,rules_by_error_type --output static_analysis_report.log || true"
+                }
+                catch (err){
+                    sh "echo ${err}"
+                }
+            }
+            stage("Email Summary Report"){
+                sh "pip3.9 install awscli --upgrade --user"
+                sh "~/.local/bin/aws --version"
+                notifyViaEmail()
+                }
+            }
+        }
+    }
+catch (err) {
+    echo "in catch block"
+    echo "Caught: ${err}"
+    currentBuild.result = 'FAILURE'
+    throw err
+}

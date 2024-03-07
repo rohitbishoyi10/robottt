@@ -1,0 +1,13 @@
+{
+    "response": {
+        "data": {
+            "ssoUrl": ""
+        },
+        "responseInfo": {
+            "errors": [
+                "720 | An error occurred while retrieving url."
+            ],
+            "status": "Failure"
+        }
+    }
+}

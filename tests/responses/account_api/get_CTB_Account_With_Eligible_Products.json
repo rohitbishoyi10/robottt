@@ -1,0 +1,17 @@
+{
+    "response": {
+        "data": {
+            "eligibleDomains": [
+                {
+                    "domainName": "^[a-zA-Z0-9._]+$",
+                    "prodInstId": "^[a-zA-Z0-9._]+$"
+                }
+            ],
+            "accountId": "^[0-9]+$",
+            "accountRole": "Primary"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

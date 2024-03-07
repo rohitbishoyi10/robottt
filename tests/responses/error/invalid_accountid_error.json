@@ -1,0 +1,13 @@
+{
+    "response": {
+        "data": {
+            "failureReason": "The account does not exist for the current user."
+        },
+        "responseInfo": {
+            "errors": [
+                "231 | Account id(s) {0} not found or not related to logged in user"
+            ],
+            "status": "Failure"
+        }
+    }
+}

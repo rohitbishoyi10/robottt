@@ -1,0 +1,12 @@
+{
+    "response": {
+        "data": {
+            "accountCreated": "^(True|False)$",
+            "checkoutLocation": "",
+            "nextPage": "^[a-zA-Z0-9]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

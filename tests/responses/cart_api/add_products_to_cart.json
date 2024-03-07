@@ -1,0 +1,12 @@
+{
+    "response": {
+        "data": {
+            "result": {
+                "BH_DEDI_PREM_SSD_WIN": "^[0-9]+$"
+            }
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

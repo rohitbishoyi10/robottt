@@ -1,0 +1,10 @@
+{
+    "response": {
+        "responseInfo": {
+            "errors": [
+                "1 | An unexpected error happened; null"
+            ],
+            "status": "Failure"
+        }
+    }
+}

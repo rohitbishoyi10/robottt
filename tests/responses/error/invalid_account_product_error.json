@@ -1,0 +1,14 @@
+{
+    "response": {
+        "data": {
+            "failureReason": "accountValidatationFailed"
+        },
+        "responseInfo": {
+            "errors": [
+                "Account-ProductNotInAccount",
+                "223 | Invalid accountId: {0} specified in the request"
+            ],
+            "status": "Failure"
+        }
+    }
+}

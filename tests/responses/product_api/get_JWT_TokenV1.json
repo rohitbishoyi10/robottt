@@ -1,0 +1,11 @@
+{
+    "response": {
+        "data": {
+            "a_token": "^[a-zA-Z- ,\/0-9\\\\().:+<>&;-_]+$",
+            "customerId": "^[0-9]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

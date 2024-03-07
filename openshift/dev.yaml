@@ -1,0 +1,54 @@
+apiVersion: v1
+kind: Template
+metadata:
+  name: bluehost-acceptance-tests
+parameters:
+  - name: PROJECT_NAME
+    description: The openshift project name.
+    required: true
+    value: bluehost-sdet
+  - name: APP_NAME
+    description: The name assigned to all of the application objects defined in this template.
+    required: true
+    value: bluehost-acceptance-tests
+  - name: GIT_SOURCE_URL
+    description: The source URL for the application.
+    required: true
+    value: https://stash.newfold.com/scm/aq/bh-automation-rf6.git
+  - name: GIT_SOURCE_REF
+    description: The source Ref for the application (branch_name)
+    required: true
+    value: sample-branch
+  - name: ENVIRONMENT
+    description: The environment
+    required: true
+    value: stage
+objects:
+  - apiVersion: v1
+    kind: BuildConfig
+    metadata:
+      labels:
+        name: ${APP_NAME}
+      name: ${APP_NAME}
+    spec:
+      source:
+        git:
+          ref: ${GIT_SOURCE_REF}
+          uri: ${GIT_SOURCE_URL}
+        sourceSecret:
+          name: stashsecret
+      strategy:
+        jenkinsPipelineStrategy:
+          jenkinsfilePath: openshift/DevJenkinsfile
+          env:
+            - name: "PROJECT_NAME"
+              value: ${PROJECT_NAME}
+            - name: "APP_NAME"
+              value: ${APP_NAME}
+            - name: "ENVIRONMENT"
+              value: ${ENVIRONMENT}
+            - name: "GIT_SOURCE_URL"
+              value: ${GIT_SOURCE_URL}
+            - name: "GIT_SOURCE_REF"
+              value: ${GIT_SOURCE_REF}
+        type: JenkinsPipeline

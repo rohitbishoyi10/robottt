@@ -1,0 +1,15 @@
+{
+    "response": {
+        "data": {
+            "renewResult": [
+                {
+                    "accountId": "^[0-9]+$",
+                    "orderId": "^[0-9]+$"
+                }
+            ]
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

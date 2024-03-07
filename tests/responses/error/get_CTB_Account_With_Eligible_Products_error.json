@@ -1,0 +1,13 @@
+{
+    "response": {
+        "data": {
+            "failureReason": "General-SystemUnavailableNo enum constant com.nsi.storefront.constants.SFClickToBuyProductCode.PRI_REG_V3"
+        },
+        "responseInfo": {
+            "errors": [
+                "716 | Unable to get eligible domains"
+            ],
+            "status": "Failure"
+        }
+    }
+}

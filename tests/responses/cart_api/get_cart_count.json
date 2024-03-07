@@ -1,0 +1,11 @@
+{
+    "response": {
+        "data": {
+            "cartId": "^[a-zA-Z0-9- ]+$",
+            "cartCount": "^[0-9]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

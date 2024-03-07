@@ -1,0 +1,79 @@
+{
+    "response": {
+        "data": {
+            "lastName": "^[a-zA-Z0-9 ]+$",
+            "verifySmsCodeFailedCount": 0,
+            "lastLoginDateTime": "^[0-9A-Z :-]+$",
+            "contactInfo": {
+                "email": "^[a-zA-Z0-9 @. -_]+$",
+                "secondaryEmail": "",
+                "phone": "^[0-9]+$",
+                "fax": "",
+                "companyName": "",
+                "companyType": "",
+                "contactType": "PERSON",
+                "contactId": 0,
+                "isNsiContact": "^(?:True|False)$",
+                "address": {
+                    "address1": "^[a-zA-Z0-9 ]+$",
+                    "city": "^[a-zA-Z0-9 ]+$",
+                    "stateProv": "RJ",
+                    "country": "IN",
+                    "postalCode": "^[0-9]+$",
+                    "addressQualityCode": -1
+                }
+            },
+            "companyName": "",
+            "bulkWhoisOptput": "^(?:True|False)$",
+            "partnerPromotionsNotify": "^(?:True|False)$",
+            "vatId": "",
+            "isAccountHolder": "^(?:True|False)$",
+            "isTPNChangeAllowed": "^(?:True|False)$",
+            "communicationOptOut": "^(?:True|False)$",
+            "isVatApplicableCountry": "^(?:True|False)$",
+            "isRegistrant": "^(?:True|False)$",
+            "falseRecoveryKeyCount": 0,
+            "accountThresholdExceeded": "^(?:True|False)$",
+            "emailNotify": "^(?:True|False)$",
+            "pin": "^[0-9]+$",
+            "renewalCenterReminderPopupDismiss": "^[0-9]+$",
+            "renewalCenterReminderNotificationDismiss": "^[0-9]+$",
+            "userLoginName": "rajatgoyalqamain",
+            "dotusUsageIntent": "P3",
+            "allowOptOutCor": "^(?:True|False)$",
+            "fax": "",
+            "email": "^[a-zA-Z0-9 @. -_]+$",
+            "nicHandleId": "448347722P",
+            "skip2FASetUp": "^(?:True|False)$",
+            "hasUserAndRoles": "^(?:True|False)$",
+            "address": {
+                "address1": "^[a-zA-Z0-9 ]+$",
+                "city": "^[a-zA-Z0-9 ]+$",
+                "stateProv": "RJ",
+                "country": "IN",
+                "postalCode": "^[0-9]+$",
+                "addressQualityCode": -1
+            },
+            "isDismissAllItemsInProgress": "^(?:True|False)$",
+            "isFirstLogin": "^(?:True|False)$",
+            "isDismissAllNotifications": "^(?:True|False)$",
+            "isTPNDisabled": "^(?:True|False)$",
+            "isTechContactUser": "^(?:True|False)$",
+            "corpTargetFlag": "^(?:True|False)$",
+            "vipCustomer": "^(?:True|False)$",
+            "productsThresholdExceeded": "^(?:True|False)$",
+            "isSingleAccount": "^(?:True|False)$",
+            "firstName": "^[a-zA-Z0-9 ]+$",
+            "hasWHOIS": "^(?:True|False)$",
+            "phone": "^[0-9]+$",
+            "twoFactorAuthStatus": "^(?:disabled|enabled)$",
+            "dotusUserCategory": "C11",
+            "skipPinSetupCount": 1,
+            "oxUpsellOptout": "^(?:True|False)$",
+            "falseVerificationCodeCount": 0
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

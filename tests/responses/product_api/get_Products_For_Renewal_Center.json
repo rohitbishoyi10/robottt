@@ -1,0 +1,45 @@
+{
+    "response": {
+        "data": {
+            "isSingleAccount": "^(True|False)$",
+            "returnedProducts": "^[0-9]+$",
+            "totalProducts": "^[0-9]+$",
+            "products": [
+                {
+                    "productName": "^[a-zA-Z- ,\\/0-9\\\\\\\\().:+<>&;-_]+$",
+                    "productDescription": "^[a-zA-Z- ,\\/0-9\\\\\\\\().:+<>&;-_]+$",
+                    "productType": "^[a-zA-Z- ,\\/0-9\\\\\\\\().:+<>&;-_]+$",
+                    "productCode": "^[a-zA-Z- ,\\/0-9\\\\\\\\().:+<>&;-_]+$",
+                    "productInstanceId": "^[a-zA-Z- ,\\/0-9\\\\\\\\().:+<>&;-_]+$",
+                    "domainName": "^[a-zA-Z- ,\\/0-9\\\\\\\\().:+<>&;-_]+$",
+                    "isDomainNameApplicable": "^[a-zA-Z]+$",
+                    "productInstanceName": "^[a-zA-Z- ,\\/0-9\\\\\\\\().:+<>&;-_]+$",
+                    "accountId": "^[0-9]+$",
+                    "isAnyDowngradePendingOrder": "^[a-zA-Z]+$",
+                    "accountName": "Rajat Goyal",
+                    "accountHolder": "Rajat Goyal",
+                    "autoRenewModifiable": "^[a-zA-Z]+$",
+                    "expiryDate": "^[a-zA-Z- ,\\/0-9\\\\\\\\().:+<>&;-_]+$",
+                    "expired": "^[a-zA-Z]+$",
+                    "autoRenew": "^[a-zA-Z]+$",
+                    "nextBillingDate": "^[a-zA-Z- ,\\/0-9\\\\\\\\().:+<>&;-_]+$",
+                    "isActive": "^[a-zA-Z]+$",
+                    "isRenewalOrderPending": "^[a-zA-Z]+$",
+                    "isAutoRenewChangeOrderPending": "^[a-zA-Z]+$",
+                    "isPaymentMethodChangePending": "^[a-zA-Z]+$",
+                    "walletItemId": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$",
+                    "paypalEmail": "^[a-zA-Z-.@_0-9]+$",
+                    "ccCardType": "^[a-zA-Z- ,\\/0-9\\\\\\\\().:+<>&;-_]+$",
+                    "ccExpDate": "^[a-zA-Z- ,\\/0-9\\\\\\\\().:+<>&;-_]+$",
+                    "paymentExpired": "^[a-zA-Z]+$",
+                    "bankName": null,
+                    "lastFourDigits": "^[0-9a-zA-Z]+$",
+                    "canEditAutoRenew": "^[a-zA-Z]+$",
+                    "canEditBillingInfo": "^[a-zA-Z]+$",
+                    "accountRole": "^[a-zA-Z]+$"
+                }
+            ]
+        }
+     }
+}

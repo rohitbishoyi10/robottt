@@ -1,0 +1,19 @@
+{
+    "response": {
+        "data": {
+            "considerSalesTax": "^(True|False)$",
+            "accountId": "^[0-9]+$",
+            "currencyFootNoteSymbol": "",
+            "failureReason": "Unsupported CTB product code entered",
+            "currencySymbol": "^[$€£¥₹]+$",
+            "currencyCode": "^[a-zA-Z]{3}$",
+            "considerVat": "^(True|False)$"
+        },
+        "responseInfo": {
+            "errors": [
+                "681 | The product code entered is not supported for CTB"
+            ],
+            "status": "Failure"
+        }
+    }
+}

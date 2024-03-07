@@ -1,0 +1,11 @@
+{
+    "response": {
+        "data": {
+            "accountId": 41688528,
+            "hasPurchasePermission": "^[a-z A-Z]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

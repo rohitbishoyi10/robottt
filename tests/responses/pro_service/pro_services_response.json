@@ -1,0 +1,11 @@
+[
+    {
+        "product": "^[A-Z a-z]+$",
+        "prodInstanceID": "^[0-9.]+$",
+        "productCode": "^[A-Z a-z_]+$",
+        "accountId": "^[0-9.]+$",
+        "status": "^[A-Z a-z]+$",
+        "parentProductCode": "^(True|False|None)$",
+        "modFormApplicable": "^(True|False|None)$"
+    }
+]

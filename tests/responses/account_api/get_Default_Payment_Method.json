@@ -1,0 +1,38 @@
+{
+    "response": {
+        "data": {
+            "accountId": 41688528,
+            "isHasWallet": true,
+            "defaultPaymentType": "CREDITCARD",
+            "paymentMethods": {
+                "creditCards": [
+                    {
+                        "cardholderName": "Rajat",
+                        "maskedNumber": "xxxxxxxxxxxx1111",
+                        "type": "VISA",
+                        "email": "^[a-z A-Z 0-9 .@]+$",
+                        "expirationMonth": "^[0-9]+$",
+                        "expirationYear": "^[0-9]+$",
+                        "maskedCvv2": "xxx",
+                        "address": {
+                            "address1": "^[a-z A-Z 0-9]+$",
+                            "address2": "",
+                            "city": "^[a-z A-Z]+$",
+                            "stateProv": "^[a-z A-Z]+$",
+                            "country": "^[a-z A-Z]+$",
+                            "postalCode": "^[0-9]+$"
+                        },
+                        "priority": "^[a-z A-Z]+$",
+                        "currencyCode": null,
+                        "isExpired": false,
+                        "walletId": "^[0-9]+$"
+                    }
+                ]
+            },
+            "isDefaultPaymentMethodFound": true
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "response": {
+        "data": {
+            "failureReason": "^[A-Z a-z-]+$"
+        },
+        "responseInfo": {
+            "errors": [
+                "^[0-9]+|[A-Za-z.]$"
+            ],
+            "status": "Failure"
+        }
+    }
+}

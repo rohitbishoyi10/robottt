@@ -1,0 +1,2 @@
+IMPACT_TRACKER_COOKIE = 'impact_tracker=105^P99C105S645N0B9A2D4499E0000V100'
+PB_COOKIE = 'pb=affiliate_nonpromo'

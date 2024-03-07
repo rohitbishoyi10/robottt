@@ -1,0 +1,10 @@
+{
+    "response": {
+        "data": {
+            "hasPermission": "^(?:True|False)$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

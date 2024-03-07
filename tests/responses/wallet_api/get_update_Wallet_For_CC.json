@@ -1,0 +1,30 @@
+{
+    "response": {
+        "data": {
+            "expirationYear": "^[0-9]+$",
+            "walletId": "^[0-9]+$",
+            "address": {
+                "address1": "^[0-9 A-Z a-z]+$",
+                "address2": "",
+                "city": "^[A-Z a-z]+$",
+                "stateProv": "^[A-Z a-z]+$",
+                "country": "^[A-Z a-z]+$",
+                "postalCode": "^[0-9]+$"
+            },
+            "maskedCvv2": "^[0-9 A-Z a-z]+$",
+            "expirationMonth": "^[0-9]+$",
+            "type": "^[A-Z a-z]+$",
+            "priority": "",
+            "maskedNumber": "xxxxxxxxxxxx1111",
+            "lastFourDigits": "^[0-9]+$",
+            "creditCardNumber": "^[0-9]+$",
+            "cardholderName": "^[A-Z a-z]+$",
+            "isExpired": "^(True|False)$",
+            "currencyCode": "^[A-Z a-z]+$",
+            "email": "^[A-Z a-z 0-9 @.]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

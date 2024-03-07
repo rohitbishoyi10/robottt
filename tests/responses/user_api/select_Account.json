@@ -1,0 +1,166 @@
+{
+    "response": {
+        "data": {
+            "selectedAccount": {
+                "accountId": "^[0-9]+$",
+                "firstName": "^[a-zA-Z0-9 ]+$",
+                "lastName": "^[a-zA-Z0-9 ]+$",
+                "type": "retail",
+                "channelId": "^[0-9]+$",
+                "phone": "^[0-9]+$",
+                "accountName": null,
+                "accountHolderName": "^[a-zA-Z0-9 ]+$",
+                "defaultPaymentType": "^[a-zA-Z0-9 ]+$",
+                "status": "Active",
+                "userAccountRelations": [
+                    {
+                        "accountId": "^[0-9]+$",
+                        "userId": "^[0-9]+$",
+                        "role": "AC"
+                    },
+                    {
+                        "accountId": "^[0-9]+$",
+                        "userId": "^[0-9]+$",
+                        "role": "AH"
+                    },
+                    {
+                        "accountId": "^[0-9]+$",
+                        "userId": "^[0-9]+$",
+                        "role": "BC"
+                    },
+                    {
+                        "accountId": "^[0-9]+$",
+                        "userId": "^[0-9]+$",
+                        "role": "PU"
+                    }
+                ],
+                "creditCards": [
+                    {
+                        "cardholderName": "^[a-zA-Z0-9 ]+$",
+                        "maskedNumber": "xxxxxxxxxxxx1111",
+                        "type": "^[a-zA-Z0-9 ]+$",
+                        "email": "^[a-zA-Z0-9 @._-]+$",
+                        "expirationMonth": "^[0-9]+$",
+                        "expirationYear": "^[0-9]+$",
+                        "maskedCvv2": "xxx",
+                        "address": {
+                            "address1": "^[a-zA-Z0-9 ]+$",
+                            "address2": "",
+                            "city": "^[a-zA-Z0-9 ]+$",
+                            "stateProv": "FL",
+                            "country": "US",
+                            "postalCode": "^[0-9]+$"
+                        },
+                        "priority": null,
+                        "currencyCode": null,
+                        "isExpired": "^(?:True|False)$",
+                        "walletId": "^[0-9]+$"
+                    },
+                    {
+                        "cardholderName": "^[a-zA-Z0-9 ]+$",
+                        "maskedNumber": "xxxxxxxxxxxx1111",
+                        "type": "^[a-zA-Z0-9 ]+$",
+                        "email": "^[a-zA-Z0-9 @. -_]+$",
+                        "expirationMonth": "^[0-9]+$",
+                        "expirationYear": "^[0-9]+$",
+                        "maskedCvv2": "xxx",
+                        "address": {
+                            "address1": "^[a-zA-Z0-9 ]+$",
+                            "address2": "",
+                            "city": "^[a-zA-Z0-9 ]+$",
+                            "stateProv": "FL",
+                            "country": "^[a-zA-Z0-9 ]+$",
+                            "postalCode": "^[0-9]+$"
+                        },
+                        "priority": "primary",
+                        "currencyCode": null,
+                        "isExpired": "^(?:True|False)$",
+                        "walletId": "^[0-9]+$"
+                    },
+                    {
+                        "cardholderName": "^[a-zA-Z0-9 ]+$",
+                        "maskedNumber": "xxxxxxxxxxxx1111",
+                        "type": "^[a-zA-Z0-9 ]+$",
+                        "email": "^[a-zA-Z0-9 @. -_]+$",
+                        "expirationMonth": "^[0-9]+$",
+                        "expirationYear": "^[0-9]+$",
+                        "maskedCvv2": "xxx",
+                        "address": {
+                            "address1": "^[a-zA-Z0-9 ]+$",
+                            "address2": "",
+                            "city": "^[a-zA-Z0-9 ]+$",
+                            "stateProv": "FL",
+                            "country": "US",
+                            "postalCode": "^[0-9]+$"
+                        },
+                        "priority": null,
+                        "currencyCode": null,
+                        "isExpired": "^(?:True|False)$",
+                        "walletId": "^[0-9]+$"
+                    },
+                    {
+                        "cardholderName": "^[a-zA-Z0-9 ]+$",
+                        "maskedNumber": "xxxxxxxxxxxx4444",
+                        "type": "^[a-zA-Z0-9 ]+$",
+                        "email": "^[a-zA-Z0-9 @. -_]+$",
+                        "expirationMonth": "^[0-9]+$",
+                        "expirationYear": "^[0-9]+$",
+                        "maskedCvv2": "xxx",
+                        "address": {
+                            "address1": "^[a-zA-Z0-9 ]+$",
+                            "address2": "",
+                            "city": "^[a-zA-Z0-9 ]+$",
+                            "stateProv": "FL",
+                            "country": "US",
+                            "postalCode": "^[0-9]+$"
+                        },
+                        "priority": null,
+                        "currencyCode": null,
+                        "isExpired": "^(?:True|False)$",
+                        "walletId": "^[0-9]+$"
+                    }
+                ],
+                "ACH": [],
+                "payPal": {
+                    "billingAgreementId": null,
+                    "firstName": null,
+                    "lastName": null,
+                    "email": "^[a-zA-Z0-9 @. -_]+$",
+                    "maskedEmail": "lindalaxxxxxx",
+                    "walletId": "^[0-9]+$",
+                    "priorityLevel": "primary",
+                    "priority": "primary"
+                },
+                "payPals": [
+                    {
+                        "billingAgreementId": null,
+                        "firstName": "",
+                        "lastName": "",
+                        "email": "^[a-zA-Z0-9 @. -_]+$",
+                        "maskedEmail": "lindalaxxxxxx",
+                        "walletId": "^[0-9]+$",
+                        "priorityLevel": "",
+                        "priority": ""
+                    },
+                    {
+                        "billingAgreementId": null,
+                        "firstName": null,
+                        "lastName": null,
+                        "email": "^[a-zA-Z0-9 @. -_]+$",
+                        "maskedEmail": "lindalaxxxxxx",
+                        "walletId": "^[0-9]+$",
+                        "priorityLevel": "primary",
+                        "priority": "primary"
+                    }
+                ],
+                "availableNexusInfo": [
+                    "US"
+                ],
+                "selected": "^(?:True|False)$"
+            }
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

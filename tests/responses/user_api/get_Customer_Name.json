@@ -1,0 +1,12 @@
+{
+    "response": {
+        "data": {
+            "firstName": "^[a-zA-Z ]+$",
+            "lastName": "^[a-zA-Z ]+$",
+            "hashedId": "^[a-zA-Z0-9]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

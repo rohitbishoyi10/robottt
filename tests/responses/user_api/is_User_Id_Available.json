@@ -1,0 +1,10 @@
+{
+    "response": {
+        "data": {
+            "available": "^(?:True|False)$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

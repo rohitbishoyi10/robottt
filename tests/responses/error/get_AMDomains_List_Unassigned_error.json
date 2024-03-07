@@ -1,0 +1,13 @@
+{
+    "response": {
+        "data": {
+            "failureReason": "General-SystemUnavailablenull"
+        },
+        "responseInfo": {
+            "errors":[
+                "719 | An error occurred while retrieving AM ProductDetails. "
+            ],
+            "status": "Failure"
+        }
+    }
+}

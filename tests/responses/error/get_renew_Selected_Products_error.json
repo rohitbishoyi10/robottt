@@ -1,0 +1,12 @@
+{
+    "response": {
+        "data": {
+            "redirect": "^(True|False)$",
+            "redirectUrl": "",
+            "errorMsg": "Selected products were not found, not on this account, or were not eligible for renew."
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

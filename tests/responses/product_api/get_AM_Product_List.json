@@ -1,0 +1,29 @@
+{
+    "response": {
+        "data": {
+            "productsCount": 36,
+            "products": [
+                {
+                    "productInstanceId": "^[a-zA-Z- ,\\/0-9\\\\\\\\.:+&;-_]+$",
+                    "accountHolderName": "^[a-z A-Z]+$",
+                    "productName": "^[a-z A-Z 0-9+]+$",
+                    "validThruDate": "",
+                    "expiryDate": "^[a-zA-Z- ,\\/0-9\\\\\\\\.:+&;-_]+$",
+                    "isCPanelEmailProduct": "^[a-z A-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "productCode": "^[a-zA-Z- ,\\/0-9\\\\\\\\.:+&;-_]+$",
+                    "parentProductInstanceId": "",
+                    "domainName": "^[a-zA-Z- ,\\/0-9\\\\\\\\.:+&;-_]+$",
+                    "autoRenew": "^[a-z A-Z]+$",
+                    "term": "^[a-z A-Z 0-9]+$",
+                    "productType": "[a-zA-Z- ,\\/0-9\\\\\\\\.:+&;-_]+$",
+                    "status": "[a-z A-Z]+$",
+                    "isBrand": "[a-z A-Z]+$"
+                }
+            ]
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

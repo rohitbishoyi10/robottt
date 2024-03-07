@@ -1,0 +1,29 @@
+{
+    "response": {
+        "data": {
+            "unprotectedInfo": {
+                "name": "^[a-z A-Z]+$",
+                "email": "^[a-z A-Z@.]+$",
+                "address": "^[a-z A-Z]+$",
+                "city": "^[a-z A-Z]+$",
+                "stateProv": "^[a-z A-Z]+$",
+                "country": "^[a-z A-Z]+$",
+                "postalCode": "^[0-9]+$",
+                "phone": "^[0-9]+$"
+            },
+            "protectedInfo": {
+                "name": "^[a-z A-Z0-9@._,]+$",
+                "email": "^[a-z A-Z0-9@._]+$",
+                "address": "^[a-z A-Z0-9@._,]+$",
+                "city": "^[a-z A-Z]+$",
+                "stateProv": "^[a-z A-Z]+$",
+                "country": "^[a-z A-Z]+$",
+                "postalCode": "^[0-9]+$",
+                "phone": "^[+0-9-]+$"
+            }
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "response": {
+        "data": {
+            "readyForSetupAlerts": [],
+            "hasBillingCenterAlerts": "^(True|False)$",
+            "actionRequiredAlerts": [],
+            "hasProfileOrSecurityAlerts": "^(True|False)$",
+            "failureReason": "The accountId is a required parameter",
+            "hasRenewalAlerts": "^(True|False)$",
+            "itemsPendingAlerts": []
+        },
+        "responseInfo": {
+            "errors": [
+                "128 | A accountId has to be specified on the request."
+            ],
+            "status": "Failure"
+        }
+    }
+}

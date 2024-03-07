@@ -1,0 +1,13 @@
+{
+    "response": {
+        "data": {
+            "failureReason": "unable to fetch Hosting package productDetails for given productInstanceId WN.HP.12345678"
+        },
+        "responseInfo": {
+            "errors": [
+                "719 | An error occurred while retrieving AM ProductDetails. "
+            ],
+            "status": "Failure"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "response": {
+        "data": {
+            "redirect": "^(True|False)$",
+            "redirectUrl": "^[/a-z/]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

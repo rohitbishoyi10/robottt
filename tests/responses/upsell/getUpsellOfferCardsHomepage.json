@@ -1,0 +1,69 @@
+{
+    "response": {
+        "data": {
+            "rankedResults": [
+                {
+                    "accountId": "^[0-9]+$",
+                    "productCode": "PRI_REG",
+                    "rank": "^[0-9]+$"
+                },
+                {
+                    "accountId": "^[0-9]+$",
+                    "productCode": "HOSTING",
+                    "rank": "^[0-9]+$"
+                },
+                {
+                    "accountId": "^[0-9]+$",
+                    "productCode": "BH_ECOMM_ADDON_FAMILY",
+                    "rank": "^[0-9]+$"
+                },
+                {
+                    "accountId": "^[0-9]+$",
+                    "productCode": "SSL_DV_FAMILY",
+                    "rank": "^[0-9]+$"
+                },
+                {
+                    "accountId": "^[0-9]+$",
+                    "productCode": "SITELOCK_ESSENTIALS",
+                    "rank": "^[0-9]+$"
+                },
+                {
+                    "accountId": "^[0-9]+$",
+                    "productCode": "PRO_DESIGN_LIVE_FAMILY",
+                    "rank": "^[0-9]+$"
+                },
+                {
+                    "accountId": "^[0-9]+$",
+                    "productCode": "YOAST_SEO_PREMIUM",
+                    "rank": "^[0-9]+$"
+                },
+                {
+                    "accountId": "^[0-9]+$",
+                    "productCode": "JETPACK_BACKUP_T1",
+                    "rank": "^[0-9]+$"
+                },
+                {
+                    "accountId": "^[0-9]+$",
+                    "productCode": "GOOGLE_WORKSPACE_STANDARD",
+                    "rank": "^[0-9]+$"
+                },
+                {
+                    "accountId": "^[0-9]+$",
+                    "productCode": "DOMAIN_ALT",
+                    "rank": "^[0-9]+$"
+                },
+                {
+                    "productCode": "DOMAIN_TRANSFER",
+                    "rank": "^[0-9]+$"
+                },
+                {
+                    "productCode": "KB_SEARCH",
+                    "rank": "^[0-9]+$"
+                }
+            ]
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "response": {
+        "data": {
+            "productPriceNumeric": "^[0-9.]+$",
+            "annualBasedMonthlyBasePrice": "",
+            "annualBasedMonthlyProductPrice": "^[0-9.$]+$",
+            "annualBasedMonthlyPrice": "^[0-9.$]+$",
+            "description": "^[A-Z a-z]+$",
+            "attributeMaxQuantity": "^[0-9.-]+$",
+            "attributePrice": "^[0-9.$]+$",
+            "discountMessage": "",
+            "attributeDefaultQuantity": "^[0-9.-]+$",
+            "price": "^[0-9.$]+$",
+            "currencyFootNoteSymbol": "",
+            "annualBasedMonthlyPriceNumeric": "^[0-9.$]+$",
+            "attribute": "^[A-Z a-z.@0-9]+$",
+            "basePrice": "",
+            "unitPrice": "^[0-9.$]+$",
+            "displayText": "^[0-9.-]+$",
+            "unitPriceNumeric": "^[0-9.$]+$",
+            "productBasePrice": "",
+            "currencySymbol": "^[$€£¥₹]$",
+            "attributeBasePrice": "",
+            "unitBasePrice": "",
+            "annualBasedMonthlyProductPriceNumeric": "^[0-9.$]+$",
+            "name": "^[A-Z a-z]+$",
+            "currencyCode": "^[A-Z]{3}$",
+            "priceNumeric": "^[0-9.$]+$",
+            "productPrice": "^[0-9.$]+$",
+            "attributeUom": "^[0-9.-]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

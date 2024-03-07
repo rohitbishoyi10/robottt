@@ -1,0 +1,10 @@
+{
+    "response": {
+        "responseInfo": {
+            "errors": [
+                "1 | An unexpected error happened; User:448347722 did not have access to AutoRenew task for any of the accounts specified"
+            ],
+            "status": "Failure"
+        }
+    }
+}

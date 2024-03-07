@@ -1,0 +1,3 @@
+{
+    "hasProService": "^(True|False)$"
+}

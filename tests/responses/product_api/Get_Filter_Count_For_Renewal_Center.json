@@ -1,0 +1,88 @@
+{
+    "response": {
+        "data": {
+            "filters": [
+                {
+                    "filterData": [
+                        {
+                            "filterOption": "^[A-Z a-z]+$",
+                            "count": "^[0-9]+$"
+                        },
+                        {
+                            "filterOption": "^[A-Z a-z]+$",
+                            "count": "^[0-9]+$"
+                        },
+                        {
+                            "filterOption": "^[A-Z a-z]+$",
+                            "count": "^[0-9]+$"
+                        }
+                    ],
+                    "filterName": "ProductType"
+                },
+                {
+                    "filterData": [
+                        {
+                            "filterOption": "ExpiryWithin30",
+                            "count": "^[0-9]+$"
+                        },
+                        {
+                            "filterOption": "ExpiryWithin60",
+                            "count": "^[0-9]+$"
+                        },
+                        {
+                            "filterOption": "ExpiryWithin90",
+                            "count": "^[0-9]+$"
+                        },
+                        {
+                            "filterOption": "ExpiryAfter90",
+                            "count": "^[0-9]+$"
+                        },
+                        {
+                            "filterOption": "Expired",
+                            "count": "^[0-9]+$"
+                        }
+                    ],
+                    "filterName": "ExpirationDate"
+                },
+                {
+                    "filterData": [
+                        {
+                            "filterOption": "AutoRenewOn",
+                            "count": "^[0-9]+$"
+                        },
+                        {
+                            "filterOption": "AutoRenewOff",
+                            "count": "^[0-9]+$"
+                        }
+                    ],
+                    "filterName": "AutoRenew"
+                },
+                {
+                    "filterData": [
+                        {
+                            "filterOption": "^[0-9]+$",
+                            "count": "^[0-9]+$"
+                        }
+                    ],
+                    "filterName": "AccountId"
+                },
+                {
+                    "filterData": [
+                        {
+                            "filterOption": "^[0-9]+$",
+                            "count": "^[0-9]+$"
+                        },
+                        {
+                            "filterOption": "^[0-9]+$",
+                            "count": "^[0-9]+$"
+                        }
+                    ],
+                    "filterName": "WalletId"
+                }
+            ]
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

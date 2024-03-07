@@ -1,0 +1,25 @@
+{
+    "response": {
+        "data": {
+            "hashedUserId": "^[A-Z0-9]+$",
+            "isUserAuthenticated": "^(True|False)$",
+            "lastName": "",
+            "isCsrRep": "^(True|False)$",
+            "isCsr": "^(True|False)$",
+            "isAuthenticatedFromCsr": "^(True|False)$",
+            "loginMethod": "",
+            "cartCount": "^[0-9]+$",
+            "adobeLink": "^[a-zA-Z0-9-.\\/]+$",
+            "hashedSessionId": "^[A-Z0-9]+$",
+            "firstName": "",
+            "environment": "^[A-Z0-9]+$",
+            "ctEscalationsTier": "^(True|False)$",
+            "isLoggedIn": "^(True|False)$",
+            "isInternalIp": "^(True|False)$",
+            "trackingId": "^[a-zA-Z0-9-]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

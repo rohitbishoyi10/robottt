@@ -1,0 +1,16 @@
+{
+    "response": {
+        "data": {
+            "upsellResult": {
+                "DOM": "^(True|False)$",
+                "PRI_REG_V2": "^(True|False)$"
+            },
+            "cart": {
+                "cartId": "^[a-zA-Z0-9- ]+$"
+            }
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

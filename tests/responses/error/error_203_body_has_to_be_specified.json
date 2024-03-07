@@ -1,0 +1,10 @@
+{
+    "response": {
+        "responseInfo": {
+            "errors": [
+                "203 | ^[a-zA-Z0-9]+$ has to be specified on the request."
+            ],
+            "status": "Failure"
+        }
+    }
+}

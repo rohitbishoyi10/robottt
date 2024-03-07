@@ -1,0 +1,63 @@
+{
+    "response": {
+        "data": {
+            "cart": {
+                "cards": [
+                    {
+                        "id": "^[0-9]+$",
+                        "type": "^[a-z]+$",
+                        "products": [
+                            {
+                                "productOriginalPrice": {
+                                    "price": "^[0-9.]+$",
+                                    "postfix": ""
+                                },
+                                "productId": "^[0-9]+$",
+                                "showTerm": "^(True|False)$",
+                                "serviceTerms": "^[a-zA-Z0-9 /\",\\[\\]]",
+                                "packageId": "^[0-9]+$",
+                                "productInstanceId": "^(|[a-zA-Z0-9. ]+$)",
+                                "index": "^[0-9]+$",
+                                "hidePrice": "^(True|False)$",
+                                "productName": "^[a-zA-Z- ]+$",
+                                "showRenewablePrice": "^(True|False)$",
+                                "productDesc": "^[a-zA-Z- ]+$",
+                                "transactionType": "^[a-zA-Z ]+$",
+                                "is28DayProduct": "^(True|False)$",
+                                "productCode": "^[A-Z_ ]",
+                                "productDiscountPrice": {
+                                    "price": "^[0-9.]+$",
+                                    "postfix": ""
+                                },
+                                "showDelete": "^(True|False)$",
+                                "productOrderActionType": "^[a-zA-Z ]+$",
+                                "refId": "^[0-9]+$",
+                                "productType": "^[a-zA-Z ]+$",
+                                "channelId": "^[0-9]+$",
+                                "currentSelectedTerm": "^[a-zA-Z0-9 ]+$"
+                            }
+                        ]
+                    }
+                ],
+                "saved": "^[0-9]+$",
+                "showDeferredCharge": "^(True|False)$",
+                "cartId": "^[a-zA-Z0-9- ]+$",
+                "deferredChargeDisclaimer": "",
+                "currencySymbol": "^[$€£¥₹]+$",
+                "tax": "^[0-9.]+$",
+                "isFromExpressRenewal": "^(True|False)$",
+                "subTotal": "^[0-9.]+$",
+                "message": "",
+                "disclaimers": [],
+                "total": "^[0-9.]+$",
+                "deferredCharge": "",
+                "siteId": "^[0-9]+$",
+                "currencyCode": "^[A-Z]+$",
+                "isPaidMediaUser": "^(True|False)$"
+            }
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

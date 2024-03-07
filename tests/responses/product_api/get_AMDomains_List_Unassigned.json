@@ -1,0 +1,16 @@
+{
+    "response": {
+        "data": {
+            "isCountExceeds": "^(True|False)$",
+            "productsCount": "^[0-9]+$",
+            "products": [
+                {
+                    "domainName": "^[A-Za-z0-9.a-z0-9]+$"
+                }
+            ]
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

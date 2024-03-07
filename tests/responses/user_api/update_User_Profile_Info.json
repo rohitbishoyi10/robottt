@@ -1,0 +1,18 @@
+{
+    "response": {
+        "data": {
+            "stateProv": "CA",
+            "country": "US",
+            "address2": "",
+            "city": "^[a-zA-Z0-9 ]+$",
+            "address1": "^[a-zA-Z0-9 ,]+$",
+            "postalCode": "^[0-9]+$"
+        },
+        "responseInfo": {
+            "warnings": [
+                "600 | Validated address found."
+            ],
+            "status": "Success"
+        }
+    }
+}

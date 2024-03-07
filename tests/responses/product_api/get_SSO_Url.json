@@ -1,0 +1,10 @@
+{
+    "response": {
+        "data": {
+            "ssoUrl": ""
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

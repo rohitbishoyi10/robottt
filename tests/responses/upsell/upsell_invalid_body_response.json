@@ -1,0 +1,13 @@
+{
+    "response": {
+        "data": {
+            "failureReason": "General-SystemUnavailable No enum constant com.nsi.storefront.marketing.UpsellOfferPriorities.UpsellCardsLocationEnum.ABCXYZ"
+        },
+        "responseInfo": {
+            "errors": [
+                "760 | Unable to get eligible upsell offer cards."
+            ],
+            "status": "Failure"
+        }
+    }
+}

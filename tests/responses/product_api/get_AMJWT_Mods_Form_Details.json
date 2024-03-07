@@ -1,0 +1,16 @@
+{
+    "response": {
+        "data": {
+            "accountId": "^[0-9]+$",
+            "productSKU": "^[A-Z_]+$",
+            "a_token": "^[a-zA-Z0-9-_.]+$",
+            "domain": "^[a-zA-Z-.]+$",
+            "productInstanceId": "^[0-9]+$",
+            "customerId": "^[0-9]+$",
+            "CRM": "^[A-Za-z]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "response": {
+        "data": {
+            "walletItems": [
+                {
+                    "accountId": "^[0-9]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "paypalEmail": "^[a-zA-Z0-9 @. -_]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "VISA",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "accountId": "^[0-9]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "paypalEmail": "^[a-zA-Z0-9 @. -_]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                },
+                {
+                    "ccCardType": "^[a-zA-Z]+$",
+                    "accountId": "^[0-9]+$",
+                    "ccExpDate": "^[a-zA-Z0-9 :]+$",
+                    "paymentExpired": "^(?:true|false)$",
+                    "walletItemId": "^[0-9]+$",
+                    "lastFourDigits": "^[0-9]+$",
+                    "paymentType": "^[a-zA-Z]+$"
+                }
+            ]
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

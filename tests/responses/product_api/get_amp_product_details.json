@@ -1,0 +1,16 @@
+{
+    "response": {
+        "data": {
+            "expiryDate": "^[0-9\\/]+$",
+            "accountId": "^[0-9]+$",
+            "productCode": "^[A-Za-z_.0-9]+$",
+            "productInstanceId": "^[A-Z.0-9]+$",
+            "productName": "^[A-Z a-z]+$",
+            "hasAutoRenew": "^[A-Z a-z]+$",
+            "status": "^[A-Z a-z]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

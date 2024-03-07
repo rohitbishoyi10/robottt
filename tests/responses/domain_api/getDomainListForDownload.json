@@ -1,0 +1,22 @@
+{
+    "response": {
+        "data": {
+            "domainList": [
+                {
+                    "accountId": "^[0-9]+$",
+                    "isDomainPrivacySupported": "^(True|False)$",
+                    "domainExpirationDate": "^[0-9\\/]+$",
+                    "domainName": "^[A-Z a-z0-9.]+$",
+                    "technicalContactName": "^[A-Z a-z]+$",
+                    "domainPrivacyStatus": "^(On|Off)$",
+                    "accountHolderName": "^[A-Z a-z]+$",
+                    "adminContactName": "^[A-Z a-z]+$",
+                    "hasAutoRenew": "^(True|False)$"
+                }
+            ]
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

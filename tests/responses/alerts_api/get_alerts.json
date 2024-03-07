@@ -1,0 +1,45 @@
+{
+    "response": {
+        "data": {
+            "readyForSetupAlerts": [
+                {
+                    "alert": {
+                        "alertMessage": "^[a-zA-Z0-9 ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$",
+                        "messageColumns": {
+                            "messageColumn2": "^[a-zA-Z0-9 ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$",
+                            "messageColumn1": "^[a-zA-Z0-9 ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$"
+                        },
+                        "ctaDisplay": "^[a-zA-Z0-9 ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$",
+                        "ctaRedirect": "^[a-zA-Z0-9 ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$",
+                        "ctaRedirectProductInstanceId": "^[a-zA-Z0-9. ]+$",
+                        "ctaRedirectUrl": "^[a-zA-Z0-9 ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$",
+                        "isUserAlert": "^(True|False)$"
+                    }
+                }
+            ],
+            "hasBillingCenterAlerts": "^(True|False)$",
+            "actionRequiredAlerts": [
+                {
+                    "alert": {
+                        "alertMessage": "^[a-zA-Z0-9 ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$",
+                        "messageColumns": {
+                            "messageColumn2": "^[a-zA-Z0-9 ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$",
+                            "messageColumn1": "^[a-zA-Z0-9 ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$"
+                        },
+                        "ctaDisplay": "^[a-zA-Z ]+$",
+                        "ctaRedirect": "^[a-zA-Z0-9 ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$",
+                        "ctaRedirectUrl": "^[a-zA-Z0-9 ~`!@#$%^&*()-_=+[\\]{}\\|;:'\"<>,.\\/?]+$",
+                        "isUserAlert": "^(True|False)$"
+                    }
+                }
+            ],
+            "hasProfileOrSecurityAlerts": "^(True|False)$",
+            "userAccountRole": "^[A-Z]+$",
+            "hasRenewalAlerts": "^(True|False)$",
+            "itemsPendingAlerts": []
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

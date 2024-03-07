@@ -1,0 +1,11 @@
+{
+    "response": {
+        "data": {
+            "flowId": "^[a-zA-Z0-9 ]+$",
+            "DEP": "^[a-zA-Z]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "response": {
+        "data": {
+            "failureReason": "Account is not found for domain:thirdpartydomaintest.com"
+        },
+        "responseInfo": {
+            "errors": [
+                "639 | An error occured while getting domainHostRecords"
+            ],
+            "status": "Failure"
+        }
+    }
+}

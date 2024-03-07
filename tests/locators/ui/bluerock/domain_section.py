@@ -1,0 +1,6 @@
+tablnk_user_domains_locator = '//div[@data-cy="left-nav-item-Domains"]'
+lnk_user_domains_locator = '//a[@href="#/domains"]'
+txt_purchase_domains_locator = '//a[@href="#/domains/purchase"]//span[text()="Purchase Domain"]'
+txt_domain_search_box_locator = '//input[@data-testid="purchaseDomainInput"]'
+btn_domain_add_locator = '//button[@data-testid="exact-match-submit"]'
+btn_goto_checkout_locator = '//button[text()="Go to Checkout"]'

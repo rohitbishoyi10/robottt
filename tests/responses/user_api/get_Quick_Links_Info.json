@@ -1,0 +1,15 @@
+{
+    "response": {
+        "data": {
+            "quickLinks": [],
+            "summaryData": {
+                "isSingleAccount": "^(?:True|False)$",
+                "numberOfAccounts": "^[0-9]+$"
+            },
+            "totalQuickLinks": "^[0-9]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

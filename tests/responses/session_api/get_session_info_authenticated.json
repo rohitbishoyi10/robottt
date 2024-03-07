@@ -1,0 +1,27 @@
+{
+    "response": {
+        "data": {
+            "hashedUserId": "^[A-Z0-9]+$",
+            "isUserAuthenticated": "^(True|False)$",
+            "lastName": "^[a-zA-Z0-9]+$",
+            "isCsrRep": "^(True|False)$",
+            "isCsr": "^(True|False)$",
+            "isAuthenticatedFromCsr": "^(True|False)$",
+            "loginMethod": "^[a-zA-Z0-9 ]+$",
+            "currencySymbol": "^[$€£¥₹]+$",
+            "cartCount": "^[0-9]+$",
+            "adobeLink": "^[a-zA-Z0-9-.\\/]+$",
+            "hashedSessionId": "^[A-Z0-9]+$",
+            "firstName": "^[a-zA-Z0-9]+$",
+            "environment": "^[a-zA-Z0-9]+$",
+            "ctEscalationsTier": "^(True|False)$",
+            "isLoggedIn": "^(True|False)$",
+            "isInternalIp": "^(True|False)$",
+            "currencyCode": "^([A-Z]{3})$",
+            "trackingId": "^[a-zA-Z0-9-]+$"
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

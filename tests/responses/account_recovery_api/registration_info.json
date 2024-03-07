@@ -1,0 +1,4 @@
+{
+    "registeredWithBrand": "^(True|False)$",
+    "orgAccount": "^(True|False)$"
+}

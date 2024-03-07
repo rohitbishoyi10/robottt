@@ -1,0 +1,35 @@
+{
+  "response": {
+    "data": {
+      "authenticated": true,
+      "resetPassword": false,
+      "hashedLoginId": "^[a-zA-Z0-9]+$",
+      "sms2FACodeSent": false,
+      "hasHostingProduct": true,
+      "instanceId": "^[A-Z.0-9]+$",
+      "isLocked": false,
+      "isMigratedCustomer": false,
+      "failedLoginAttemptCount": 0,
+      "skip2FASetUp": false,
+      "isPINSet": true,
+      "newUserPromoRemoved": false,
+      "isFirstLogin": false,
+      "loginMethod": "traditional login",
+      "sessionId": "^[a-zA-Z0-9]+$",
+      "loginStatus": "LoggedIn",
+      "amLoginHomePage": "/my-account/welcome",
+      "userId": "^[0-9]+$",
+      "hashedSessionId": "^[a-zA-Z0-9]+$",
+      "accountId": "^[0-9]+$",
+      "passwordPlusLoginRequired": false,
+      "productCode": "BH_VPS_STD_CPANEL",
+      "twoFactorAuthStatus": "disabled",
+      "siteId": "^[0-9]+$",
+      "daysSinceFirstLogin": "^[0-9]+$",
+      "hasWebsiteWPHostingProduct": true
+    },
+    "responseInfo": {
+      "status": "Success"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+    "response": {
+        "data": {
+            "domainCount": "^[0-9]+$",
+            "domainList": [
+                {
+                    "isPremiumDnsOrderPending": "^(True|False)$",
+                    "hasWebsiteForwarding": "^(True|False)$",
+                    "isDomainPrivacySupported": "^(True|False)$",
+                    "isDepProtectionOrderPending": "^(True|False)$",
+                    "isRenewalDomainCCTldBlock": "^(True|False)$",
+                    "numberOfServices": "^[0-9]+$",
+                    "websiteForwardingStatus": "^[A-Z a-z]+$",
+                    "nameServers": [
+                        {
+                            "nameServerName": "^[A-Z a-z0-9.]+$",
+                            "isDefault": "^(True|False)$"
+                        },
+                        {
+                            "nameServerName": "^[A-Z a-z0-9.]+$",
+                            "isDefault": "^(True|False)$"
+                        }
+                    ],
+                    "accountHolderName": "Rajat Goyal",
+                    "productName": "^[A-Z a-z0-9.]+$",
+                    "hasDepProtection": "^(True|False)$",
+                    "freeTrailPRLeftDays": "^[0-9]+$",
+                    "domainCreateDate": "^[0-9\\/]+$",
+                    "domainPrivacyStatus": "ON",
+                    "depStatus": "^(on|off)$",
+                    "isDepProtectionEligible": "^(True|False)$",
+                    "domainSuspensionReason": "",
+                    "webForwardingUrlCount": "^[0-9]+$",
+                    "premiumDnsStatus": "Inactive",
+                    "isThirdPartyDns": "^(True|False)$",
+                    "domainRenewByDate": "^[0-9\\/]+$",
+                    "domainOwnerEmail": "^[A-Z a-z0-9.@_]+$",
+                    "premiumDnsProdInstId": "null",
+                    "freeTrailPrivacyProtectionExpDate": "",
+                    "isCcTld": "^(True|False)$",
+                    "hasFreeTrailPrivacyProtection": "^(True|False)$",
+                    "domainSuspensionUpdate": "",
+                    "domainStatus": "ACTIVE",
+                    "domainOwnerName": "^[A-Z a-z]+$",
+                    "hasPremiumDns": "^(True|False)$",
+                    "domainLocks": {
+                        "domainTransferLock": "^(True|False)$",
+                        "domain60DayLock": "^(True|False)$",
+                        "domainCORLock": "^(True|False)$",
+                        "domainLegalLock": "^(True|False)$"
+                    },
+                    "isDomainPrivacyOrderPending": "^(True|False)$",
+                    "hasAutoRenew": "^(True|False)$",
+                    "isWebForwardingOrderPending": "^(True|False)$",
+                    "accountId": "^[0-9]+$",
+                    "domainExpirationDate": "^[0-9\\/]+$",
+                    "domainName": "^[A-Z a-z0-9.]+$",
+                    "isGdprMasked": "^(True|False)$",
+                    "prodInstId": "^[A-Z a-z0-9.]+$",
+                    "webForwardingProdInstId": "null",
+                    "productCd": "^[A-Z a-z0-9._-]+$"
+                }
+
+            ]
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}

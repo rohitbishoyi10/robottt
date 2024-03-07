@@ -1,0 +1,19 @@
+{
+    "response": {
+        "data": {
+            "applicableOffer": {
+                "offer": "^[a-zA-Z0-9-.//_]+$",
+                "totalEligibleProducts": 1,
+                "eligibleProducts": [
+                    {
+                        "domainName": "^[a-zA-Z0-9-.]+$",
+                        "prodInstId": "^[a-zA-Z0-9-.]+$"
+                    }
+                ]
+            }
+        },
+        "responseInfo": {
+            "status": "Success"
+        }
+    }
+}
